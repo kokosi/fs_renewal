@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta name="description" content="지트릭스 판타지 스타디움 홈페이지" />
+    <meta name="author" content="Gtirx" />
+    <meta name="keywords" content="Gtrix, 지트릭스, FantasyStadium, 판타지스타디움, Baseball Game" />
+    <meta name="viewport" content="width=1000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>판타지 스타디움</title>
+    <script type="text/javascript" src="../js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="../js/plugin/slick.min.js"></script>
+    <script type="text/javascript" src="../js/fs_js.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/fantasyMain.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <style>
+        /*basic
+        @font-face {
+            font-family: 'NanumBarunGothic';
+            src: url('../fonts/NanumBarunGothic.eot'); src: local(※), url('../fonts/NanumBarunGothic.woff') format("woff"), url('../fonts/NanumBarunGothic.ttf') format("truetype");
+        }*/
+    </style>
+</head>
+<body>
+<!--naver iframe-->
+<iframe title="SNB" id="snb_box" name="snb_new" src="http://news.naver.com/sports/2007/views/framed_top_new.php?parent_target=1&amp;from=fg&amp;template_size=1000" width="1000" height="108" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true"></iframe>
+
+<div id="fsWrap">
+    <!--header-->
+    <header id="headerWrap">
+        <h1><a href="javascript:void(0);">판타지스타디움</a></h1>
+        <nav class="gnbWrap">
+            <h2 class="hidden">GNB</h2>
+            <ul class="navList">
+                <li class="list"><a class="menu" href="javascript:void(0);">판스소식</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">공지사항</a></li>
+                        <li><a href="javascript:void(0);">이벤트</a></li>
+                    </ul>
+                </li>
+                <li class="list"><a class="menu" href="javascript:void(0);">가이드</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">초보자가이드</a></li>
+                        <li><a href="javascript:void(0);">게임가이드</a></li>
+                    </ul>
+                </li>
+                <li class="list"><a class="menu" href="javascript:void(0);">판스 정보센터</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">판스 랭킹</a></li>
+                        <li><a href="javascript:void(0);">선수 포인트 랭킹</a></li>
+                        <li><a href="javascript:void(0);">선수 카드</a></li>
+                        <li><a href="javascript:void(0);">KBO 일정 및 결과</a></li>
+                    </ul>
+                </li>
+                <li class="list"><a class="menu" href="javascript:void(0);">커뮤니티</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">자유게시판</a></li>
+                        <li><a href="javascript:void(0);">라인업분석</a></li>
+                        <li><a href="javascript:void(0);">공략게시판</a></li>
+                        <li><a href="javascript:void(0);">GM노트</a></li>
+                    </ul>
+                </li>
+                <li class="list"><a class="menu" href="javascript:void(0);">상점</a></li>
+                <li class="list"><a class="menu" href="javascript:void(0);">고객센터</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">FAQ</a></li>
+                        <li><a href="javascript:void(0);">1:1문의</a></li>
+                        <li><a href="javascript:void(0);">약관</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="frBattle" href="javascript:void(0);"> <i class="fa fa-external-link-square"></i> 구단대전</a>
+        </nav>
+    </header>
+
+    <div class="clear"></div>
+
+    <!--lineUp-->
+    <section id="todayLineup">
+        <h2 class="hidden">Match Lineup</h2>
+        <strong>02월 06일 경기 라인업</strong>
+        <ul class="lineupList">
+            <li>
+                <a class="lineupState" href="javascript:void(0);">
+                    <div class="club awayTeam">
+                        <img src="../images/temp/logo_1.png" alt="구단로고"/>
+                        <p>톰</p>
+                    </div>
+                    <div class="scoreState">
+                        <p class="score">99:99</p>
+                        <p class="state">10회초</p>
+                    </div>
+                    <div class="club homeTeam">
+                        <img src="../images/temp/logo_2.png" alt="구단로고"/>
+                        <p>최대다섯자</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="lineupState" href="javascript:void(0);">
+                    <div class="club awayTeam">
+                        <img src="../images/temp/logo_3.png" alt="구단로고"/>
+                        <p>최대다섯자</p>
+                    </div>
+                    <div class="scoreState">
+                        <p class="score">99:99</p>
+                        <p class="state">10회초</p>
+                    </div>
+                    <div class="club homeTeam">
+                        <img src="../images/temp/logo_4.png" alt="구단로고"/>
+                        <p>최대다섯자</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="lineupState" href="javascript:void(0);">
+                    <div class="club awayTeam">
+                        <img src="../images/temp/logo_5.png" alt="구단로고"/>
+                        <p>최대다섯자</p>
+                    </div>
+                    <div class="scoreState">
+                        <p class="score">99:99</p>
+                        <p class="state">10회초</p>
+                    </div>
+                    <div class="club homeTeam">
+                        <img src="../images/temp/logo_6.png" alt="구단로고"/>
+                        <p>최대다섯자</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="lineupState" href="javascript:void(0);">
+                    <div class="club awayTeam">
+                        <img src="../images/temp/logo_7.png" alt="구단로고"/>
+                        <p>최대다섯자</p>
+                    </div>
+                    <div class="scoreState">
+                        <p class="score">VS</p>
+                        <p class="state">18:30</p>
+                    </div>
+                    <div class="club homeTeam">
+                        <img src="../images/temp/logo_8.png" alt="구단로고"/>
+                        <p>최대다섯자</p>
+                    </div>
+                </a>
+            </li>
+            <li class="none">경기가 없습니다</li>
+        </ul>
+    </section>
+
+    <!--banner & common-->
+    <section id="visualWrap">
+        <!--banner-->
+        <div class="slideWrap">
+            <div>
+                <a href="javascript:void(0);"><img src="../images/temp/temp_banner_01.jpg" alt="배너영역"></a>
+            </div>
+            <div>
+                <a href="javascript:void(0);"><img src="../images/temp/temp_banner_02.png" alt="배너영역"></a>
+            </div>
+            <div>
+                <a href="javascript:void(0);"><img src="../images/temp/temp_banner_01.jpg" alt="배너영역"></a>
+            </div>
+            <div>
+                <a href="javascript:void(0);"><img src="../images/temp/temp_banner_02.png" alt="배너영역"></a>
+            </div>
+        </div>
+
+        <!--start & login-->
+        <div class="personalWrap">
+            <a class="gameStart" href="javascript:void(0);"><img src="../images/common/gameStart.jpg" alt="게임시작"></a>
+            <div class="login">
+                <!--naver login-->
+                <a class="naverLogin hide" href="javascript:void(0);"><img src="../images/common/btn_naverLogin.png" alt="네이버로그인"/></a>
+                <!--agree-->
+                <a class="beforeAgree hide" href="javascript:void(0);"><img src="../images/common/btn_agree.gif" alt="제 3자 정보 제공 동의"/></a>
+                <!--my info-->
+                <div class="info hide">
+                    <p class="myInfo">
+                        <img src="../images/character/mascot_s_1.png" alt="선호구단로고"/>
+                        <strong>일이삼사오륙칠팔구십</strong>
+                        <a class="btn_x_49" href="javascript:void(0);">내정보</a>
+                    </p>
+                    <p class="cashInfo">
+                        <span class="icon_cash">캐쉬</span>&nbsp;&nbsp;<span>게임캐쉬</span>&nbsp;
+                        <strong class="cashRecent">99999</strong>
+                        <a class="btn_x_49" href="javascript:void(0);">충전</a>
+                    </p>
+                    <p class="cashInfo">
+                        <span class="icon_coin">코인</span>&nbsp;&nbsp;<span>보유코인</span>&nbsp;
+                        <strong class="cashRecent">999999</strong>
+                        <a class="btn_x_49" href="javascript:void(0);">충전</a>
+                    </p>
+                </div>
+                <!--cancel-->
+                <div class="game_retraction">
+                    <p class="txt">
+                        계정이 해지 신청 상태입니다.<br>신청을 취소하시려면 <strong><a href="javascript:game_cancel_popup();" style="color:red">[게임 해지 철회]</a></strong><br>를 클릭하세요
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--contents01-->
+    <section class="contents">
+        <!--notice-->
+        <div class="con320 notice">
+            <p class="title">
+                <a class="active" href="javascript:void(0);">새소식</a>
+                <span class="line">|</span>
+                <a class="de" href="javascript:void(0);">업데이트</a>
+                <a href="javascript:void(0);"><i class="fa fa-plus-circle"></i></a>
+            </p>
+            <ul class="noticeList">
+                <li>
+                    <p class="noticeTitle"><a href="javascript:void(0);">[공지] 공지사항글자확인중입니다여기까..</a></p>
+                    <p>&nbsp;2017.02.07 &nbsp;<span class="newIcon hot">HOT</span></p>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="noticeTitle"><a href="javascript:void(0);">[공지] 주간 랭킹대전 5주차 당첨자 안내!</a></p>
+                        <p>&nbsp;2017.02.07 &nbsp;<span class="newIcon">NEW</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="noticeTitle"><a href="javascript:void(0);">[공지] 주간 랭킹대전 5주차 당첨자 안내!</a></p>
+                        <p>&nbsp;2017.02.07 &nbsp;<span class="newIcon hot">HOT</span></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--gmNote-->
+        <div class="con320 gmNote">
+            <p class="title">
+                GM 노트
+                <a href="javascript:void(0);"><i class="fa fa-plus-circle"></i></a>
+            </p>
+            <a href="javascript:void(0);">
+                <dl class="gmCon">
+                    <dt class="gmTitle">04월 20일 팀별 출전 선수 명단</dt>
+                    <dd class="gmDate">2017.04.20&nbsp;<span class="newIcon">NEW</span></dd>
+                    <dd class="gmText">
+                        안녕하세요. GM 야구소년 입니다.<br>
+                        판타지 스타디움을 이용하시는 많은 구단주<br>
+                        여러분께서 기다리시던 2016 KBO 프로야구<br>
+                        under 3 line is overflow hidden state
+                    </dd>
+                </dl>
+            </a>
+        </div>
+
+        <!--fsPreview-->
+        <div class="con320 fsPre">
+            <p class="title">
+                판스 프리뷰
+                <a href="javascript:void(0);"><i class="fa fa-plus-circle"></i></a>
+            </p>
+            <div class="fsPreSlide">
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="../images/temp/temp_fsPre.png" alt="테스트"/>
+                        <strong>글자가몇개가나오는게여기까..</strong>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="../images/temp/temp_fsPre.png" alt="테스트"/>
+                        <strong>2번 2017.02.07</strong>
+                    </a>
+                    </div>
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="../images/temp/temp_fsPre.png" alt="테스트"/>
+                        <strong>3번 2017.02.07</strong>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="../images/temp/temp_fsPre.png" alt="테스트"/>
+                        <strong>4번 2017.02.07</strong>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="../images/temp/temp_fsPre.png" alt="테스트"/>
+                        <strong>5번 2017.02.07</strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contents02-->
+    <section class="contents">
+        <!--community-->
+        <div class="con660 community">
+            <p class="title">
+                <a class="active" href="javascript:void(0);">자유게시판</a>
+                <span class="line">|</span>
+                <a class="de" href="javascript:void(0);">라인업게시판</a>
+                <span class="line">|</span>
+                <a class="de" href="javascript:void(0);">공략게시판</a>
+                <a href="javascript:void(0);"><i class="fa fa-plus-circle"></i></a>
+            </p>
+            <ul class="communityList">
+                <li>
+                    <p class="communityTitle"><a href="javascript:void(0);">글자수확인체크확인체여기까.. <span>(9999)</span></a></p>
+                    <p class="info">
+                        <img src="../images/character/mascot_s_1.png" alt="마스코트"/>
+                        <span class="name">일이삼사오육칠팔구십</span>&nbsp;
+                        <span class="date">2017.04.07</span>
+                        <span class="newIcon">NEW</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="communityTitle"><a href="javascript:void(0);">자유게시판입니다. 대박사건! <span>(999)</span></a></p>
+                    <p class="info">
+                        <img src="../images/character/mascot_s_10.png" alt="마스코트"/>
+                        <span class="name">크트크트크트</span>&nbsp;
+                        <span class="date">2017.04.07</span>
+                        <span class="newIcon">NEW</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="communityTitle"><a href="javascript:void(0);">자유게시판입니다. 대박사건! <span>(999)</span></a></p>
+                    <p class="info">
+                        <img src="../images/character/mascot_s_3.png" alt="마스코트"/>
+                        <span class="name">기아콘푸로스트</span>&nbsp;
+                        <span class="date">2017.04.07</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="communityTitle"><a href="javascript:void(0);">자유게시판입니다. 대박사건! <span>(999)</span></a></p>
+                    <p class="info">
+                        <img src="../images/character/mascot_s_6.png" alt="마스코트"/>
+                        <span class="name">일이삼사오육칠팔구십</span>&nbsp;
+                        <span class="date">2017.04.07</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <!--search-->
+        <div class="con320 search">
+            <strong>선수카드 검색</strong>
+            <em>선수 이름으로 찾아보세요!</em>
+            <div class="searchBox">
+                <i class="fa fa-search"></i>
+                <input class="searchInput" type="text" placeholder="">
+                <button class="find">찾기</button>
+            </div>
+        </div>
+    </section>
+
+    <!--contents03-->
+    <section class="contents">
+        <!--rank-->
+        <div class="con320 ranking">
+            <p class="title">
+                <a class="active" href="javascript:void(0);">팀전 랭킹</a>
+                <span class="line">|</span>
+                <a class="de" href="javascript:void(0);">배틀 랭킹</a>
+                <a href="javascript:void(0);"><i class="fa fa-plus-circle"></i></a>
+            </p>
+            <ul class="rankTab">
+                <li class="active"><a href="javascript:void(0);">일간</a></li>
+                <li><a href="javascript:void(0);">주간</a></li>
+                <li><a href="javascript:void(0);">시즌</a></li>
+            </ul>
+            <div class="clear"></div>
+            <ul class="rankList">
+                <li>
+                    <strong class="rank">1위</strong>&nbsp;
+                    <img src="../images/character/mascot_s_6.png" alt="">
+                    <strong class="name">일이삼사오육칠팔구십</strong>
+                    <span class="point">9,999,999점</span>
+                </li>
+                <li>
+                    <strong class="rank">2위</strong>&nbsp;
+                    <img src="../images/character/mascot_s_3.png" alt="">
+                    <strong class="name">기아콘푸로스트</strong>
+                    <span class="point">9,999,999점</span>
+                </li>
+                <li>
+                    <strong class="rank">3위</strong>&nbsp;
+                    <img src="../images/character/mascot_s_10.png" alt="">
+                    <strong class="name">크트크트크트</strong>
+                    <span class="point">9,999,999점</span>
+                </li>
+            </ul>
+        </div>
+
+        <!--newCard-->
+        <div class="con660 newCard">
+            <p class="title">
+                신규 등급카드 <span class="date">(17.02.08)</span>
+                <a href="javascript:void(0);"><i class="fa fa-plus-circle"></i></a>
+            </p>
+            <div class="newCardSlide">
+                <div class="card">
+                    <dl>
+                        <dt class="card_bg"><img src="../images/card/card_B_bg_S.png" alt="카드배경"/></dt>
+                        <dd class="card_class"><img src="../images/card/card_B_class_S.png" alt="카드등급"/></dd>
+                        <dd class="card_date">2017.02.08</dd>
+                        <dd class="card_cost"><img src="../images/card/costS_no5.png" alt="카드코스트"/></dd>
+                        <dd class="card_cartoon"><img src="../images/card/temp/61240_s.png" alt="카드이미지"/></dd>
+                        <dd class="card_info_bg"><img src="../images/card/card_B_namebg.png" alt="카드정보뱌경"/></dd>
+                        <dd class="card_logo"><img src="../images/card/team_B_hanwha.png" alt="카드구단로고"/></dd>
+                        <dd class="card_number">99</dd>
+                        <dd class="card_name">최대다섯자</dd>
+                        <dd class="card_position">지명타자</dd>
+                        <dd class="card_option">
+                            <img src="../images/card/option_B_1101.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1102.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1103.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1104.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1105.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1106.png" alt="카드옵션">
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card">
+                    <dl>
+                        <dt class="card_bg"><img src="../images/card/card_B_bg_A.png" alt="카드배경"/></dt>
+                        <dd class="card_class"><img src="../images/card/card_B_class_A.png" alt="카드등급"/></dd>
+                        <dd class="card_date">2017.02.08</dd>
+                        <dd class="card_cost"><img src="../images/card/costA_no5.png" alt="카드코스트"/></dd>
+                        <dd class="card_cartoon"><img src="../images/card/temp/61240_a.png" alt="카드이미지"/></dd>
+                        <dd class="card_info_bg"><img src="../images/card/card_B_namebg.png" alt="카드정보뱌경"/></dd>
+                        <dd class="card_logo"><img src="../images/card/team_B_doosan.png" alt="카드구단로고"/></dd>
+                        <dd class="card_number">99</dd>
+                        <dd class="card_name">니퍼트</dd>
+                        <dd class="card_position">선발</dd>
+                        <dd class="card_option">
+                            <img src="../images/card/option_B_1101.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1102.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1103.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1104.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1105.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1106.png" alt="카드옵션">
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card">
+                    <dl>
+                        <dt class="card_bg"><img src="../images/card/card_B_bg_B.png" alt="카드배경"/></dt>
+                        <dd class="card_class"><img src="../images/card/card_B_class_B.png" alt="카드등급"/></dd>
+                        <dd class="card_date">2017.02.08</dd>
+                        <dd class="card_cost"><img src="../images/card/costB_no5.png" alt="카드코스트"/></dd>
+                        <dd class="card_cartoon"><img src="../images/card/temp/61240_b.png" alt="카드이미지"/></dd>
+                        <dd class="card_info_bg"><img src="../images/card/card_B_namebg.png" alt="카드정보뱌경"/></dd>
+                        <dd class="card_logo"><img src="../images/card/team_B_doosan.png" alt="카드구단로고"/></dd>
+                        <dd class="card_number">99</dd>
+                        <dd class="card_name">니퍼트</dd>
+                        <dd class="card_position">선발</dd>
+                        <dd class="card_option">
+                            <img src="../images/card/option_B_1101.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1102.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1103.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1104.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1105.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1106.png" alt="카드옵션">
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card">
+                    <dl>
+                        <dt class="card_bg"><img src="../images/card/card_B_bg_C.png" alt="카드배경"/></dt>
+                        <dd class="card_class"><img src="../images/card/card_B_class_C.png" alt="카드등급"/></dd>
+                        <dd class="card_date">2017.02.08</dd>
+                        <dd class="card_cost"><img src="../images/card/costC_no5.png" alt="카드코스트"/></dd>
+                        <dd class="card_cartoon"><img src="../images/card/temp/61240_c.png" alt="카드이미지"/></dd>
+                        <dd class="card_info_bg"><img src="../images/card/card_B_namebg.png" alt="카드정보뱌경"/></dd>
+                        <dd class="card_logo"><img src="../images/card/team_B_doosan.png" alt="카드구단로고"/></dd>
+                        <dd class="card_number">99</dd>
+                        <dd class="card_name">니퍼트</dd>
+                        <dd class="card_position">선발</dd>
+                        <dd class="card_option">
+                            <img src="../images/card/option_B_1101.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1102.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1103.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1104.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1105.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1106.png" alt="카드옵션">
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card">
+                    <dl>
+                        <dt class="card_bg"><img src="../images/card/card_B_bg_D.png" alt="카드배경"/></dt>
+                        <dd class="card_class"><img src="../images/card/card_B_class_D.png" alt="카드등급"/></dd>
+                        <dd class="card_date">2017.02.08</dd>
+                        <dd class="card_cost"><img src="../images/card/costD_no5.png" alt="카드코스트"/></dd>
+                        <dd class="card_cartoon"><img src="../images/card/temp/61240_d.png" alt="카드이미지"/></dd>
+                        <dd class="card_info_bg"><img src="../images/card/card_B_namebg.png" alt="카드정보뱌경"/></dd>
+                        <dd class="card_logo"><img src="../images/card/team_B_doosan.png" alt="카드구단로고"/></dd>
+                        <dd class="card_number">99</dd>
+                        <dd class="card_name">니퍼트</dd>
+                        <dd class="card_position">선발</dd>
+                        <dd class="card_option">
+                            <img src="../images/card/option_B_1101.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1102.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1103.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1104.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1105.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1106.png" alt="카드옵션">
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card">
+                    <dl>
+                        <dt class="card_bg"><img src="../images/card/card_B_bg_A.png" alt="카드배경"/></dt>
+                        <dd class="card_class"><img src="../images/card/card_B_class_A.png" alt="카드등급"/></dd>
+                        <dd class="card_date">2017.02.08</dd>
+                        <dd class="card_cost"><img src="../images/card/costA_no5.png" alt="카드코스트"/></dd>
+                        <dd class="card_cartoon"><img src="../images/card/temp/61240_a.png" alt="카드이미지"/></dd>
+                        <dd class="card_info_bg"><img src="../images/card/card_B_namebg.png" alt="카드정보뱌경"/></dd>
+                        <dd class="card_logo"><img src="../images/card/team_B_doosan.png" alt="카드구단로고"/></dd>
+                        <dd class="card_number">99</dd>
+                        <dd class="card_name">니퍼트</dd>
+                        <dd class="card_position">선발</dd>
+                        <dd class="card_option">
+                            <img src="../images/card/option_B_1101.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1102.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1103.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1104.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1105.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1106.png" alt="카드옵션">
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card">
+                    <dl>
+                        <dt class="card_bg"><img src="../images/card/card_B_bg_S.png" alt="카드배경"/></dt>
+                        <dd class="card_class"><img src="../images/card/card_B_class_S.png" alt="카드등급"/></dd>
+                        <dd class="card_date">2017.02.08</dd>
+                        <dd class="card_cost"><img src="../images/card/costS_no5.png" alt="카드코스트"/></dd>
+                        <dd class="card_cartoon"><img src="../images/card/temp/61240_s.png" alt="카드이미지"/></dd>
+                        <dd class="card_info_bg"><img src="../images/card/card_B_namebg.png" alt="카드정보뱌경"/></dd>
+                        <dd class="card_logo"><img src="../images/card/team_B_hanwha.png" alt="카드구단로고"/></dd>
+                        <dd class="card_number">99</dd>
+                        <dd class="card_name">최대다섯자</dd>
+                        <dd class="card_position">지명타자</dd>
+                        <dd class="card_option">
+                            <img src="../images/card/option_B_1101.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1102.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1103.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1104.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1105.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1106.png" alt="카드옵션">
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card">
+                    <dl>
+                        <dt class="card_bg"><img src="../images/card/card_B_bg_B.png" alt="카드배경"/></dt>
+                        <dd class="card_class"><img src="../images/card/card_B_class_B.png" alt="카드등급"/></dd>
+                        <dd class="card_date">2017.02.08</dd>
+                        <dd class="card_cost"><img src="../images/card/costB_no5.png" alt="카드코스트"/></dd>
+                        <dd class="card_cartoon"><img src="../images/card/temp/61240_b.png" alt="카드이미지"/></dd>
+                        <dd class="card_info_bg"><img src="../images/card/card_B_namebg.png" alt="카드정보뱌경"/></dd>
+                        <dd class="card_logo"><img src="../images/card/team_B_doosan.png" alt="카드구단로고"/></dd>
+                        <dd class="card_number">99</dd>
+                        <dd class="card_name">니퍼트</dd>
+                        <dd class="card_position">선발</dd>
+                        <dd class="card_option">
+                            <img src="../images/card/option_B_1101.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1102.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1103.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1104.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1105.png" alt="카드옵션">
+                            <img src="../images/card/option_B_1106.png" alt="카드옵션">
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contents04-->
+    <section class="contents">
+        <!--player-->
+        <div class="con1000 player">
+            <p class="title">
+                <a class="active" href="javascript:void(0);">타자 포인트 랭킹</a>
+                <span class="line">|</span>
+                <a class="de" href="javascript:void(0);">투수 포인트 랭킹</a>
+                <a href="javascript:void(0);"><i class="fa fa-plus-circle"></i></a>
+            </p>
+            <!--batter-->
+            <table class="playerInfo batter hide">
+                <colgroup>
+                    <col width="55px"><col width="125px"><col width="55px"><col width="70px"><col width="55px"><col width="45px"><col width="40px"><col width="55px"><col width="55px"><col width="45px"><col width="40px"><col width="55px"><col width="55px"><col width="55px"><col width="70px"><col width="85px">
+                </colgroup>
+                <tr class="header">
+                    <th>순위</th><th>이름</th><th>타수</th><th>타율</th><th>타점</th><th>홈런</th><th>도루</th><th>득점</th><th>안타</th><th>2루타</th><th>3루타</th><th>볼넷</th><th>삼진</th><th>병살</th><th>장타율</th><th>판스포인트</th>
+                </tr>
+                <tbody>
+                <tr class="tList">
+                    <td class="pRank top">1</td>
+                    <td class="pName">최형우 (기아)</td>
+                    <td>519</td>
+                    <td>0.376</td>
+                    <td>144</td>
+                    <td>31</td>
+                    <td>2</td>
+                    <td>99</td>
+                    <td>195</td>
+                    <td>46</td>
+                    <td>2</td>
+                    <td>92</td>
+                    <td>83</td>
+                    <td>20</td>
+                    <td>0.651</td>
+                    <td class="pPoint">320,780</td>
+                </tr>
+                <tr class="tList">
+                    <td class="pRank top">2</td>
+                    <td class="pName">최형우 (기아)</td>
+                    <td>519</td>
+                    <td>0.376</td>
+                    <td>144</td>
+                    <td>31</td>
+                    <td>2</td>
+                    <td>99</td>
+                    <td>195</td>
+                    <td>46</td>
+                    <td>2</td>
+                    <td>92</td>
+                    <td>83</td>
+                    <td>20</td>
+                    <td>0.651</td>
+                    <td class="pPoint">320,780</td>
+                </tr>
+                <tr class="tList">
+                    <td class="pRank top">3</td>
+                    <td class="pName">최형우 (기아)</td>
+                    <td>519</td>
+                    <td>0.376</td>
+                    <td>144</td>
+                    <td>31</td>
+                    <td>2</td>
+                    <td>99</td>
+                    <td>195</td>
+                    <td>46</td>
+                    <td>2</td>
+                    <td>92</td>
+                    <td>83</td>
+                    <td>20</td>
+                    <td>0.651</td>
+                    <td class="pPoint">320,780</td>
+                </tr>
+                <tr class="tList">
+                    <td class="pRank">4</td>
+                    <td class="pName">최형우 (기아)</td>
+                    <td>519</td>
+                    <td>0.376</td>
+                    <td>144</td>
+                    <td>31</td>
+                    <td>2</td>
+                    <td>99</td>
+                    <td>195</td>
+                    <td>46</td>
+                    <td>2</td>
+                    <td>92</td>
+                    <td>83</td>
+                    <td>20</td>
+                    <td>0.651</td>
+                    <td class="pPoint">320,780</td>
+                </tr>
+                <tr class="tList">
+                    <td class="pRank">5</td>
+                    <td class="pName">최형우 (기아)</td>
+                    <td>519</td>
+                    <td>0.376</td>
+                    <td>144</td>
+                    <td>31</td>
+                    <td>2</td>
+                    <td>99</td>
+                    <td>195</td>
+                    <td>46</td>
+                    <td>2</td>
+                    <td>92</td>
+                    <td>83</td>
+                    <td>20</td>
+                    <td>0.651</td>
+                    <td class="pPoint">320,780</td>
+                </tr>
+                </tbody>
+            </table>
+            <!--pitcher-->
+            <table class="playerInfo pitcher">
+                <colgroup>
+                    <col width="55px"><col width="125px"><col width="50px"><col width="50px"><col width="45px"><col width="55px"><col width="50px"><col width="40px"><col width="80px"><col width="55px"><col width="50px"><col width="55px"><col width="55px"><col width="40px"><col width="70px"><col width="85px">
+                </colgroup>
+                <tr class="header">
+                    <th>순위</th><th>이름</th><th>승</th><th>패</th><th>세이브</th><th>평균자책</th><th>탈삼진</th><th>홀드</th><th>이닝</th><th>실점</th><th>피안타</th><th>피홈런</th><th>볼넷</th><th>사구</th><th>승률</th><th>판스포인트</th>
+                </tr>
+                <tbody>
+                <tr class="tList">
+                    <td class="pRank top">1</td>
+                    <td class="pName">니퍼트 (두산)</td>
+                    <td>22</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2.95</td>
+                    <td>142</td>
+                    <td>0</td>
+                    <td>999 9/9</td>
+                    <td>61</td>
+                    <td>151</td>
+                    <td>15</td>
+                    <td>57</td>
+                    <td>9</td>
+                    <td>0.880</td>
+                    <td class="pPoint">320,780</td>
+                </tr>
+                <tr class="tList">
+                    <td class="pRank top">2</td>
+                    <td class="pName">니퍼트 (두산)</td>
+                    <td>22</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2.95</td>
+                    <td>142</td>
+                    <td>0</td>
+                    <td>999 9/9</td>
+                    <td>61</td>
+                    <td>151</td>
+                    <td>15</td>
+                    <td>57</td>
+                    <td>9</td>
+                    <td>0.880</td>
+                    <td class="pPoint">320,780</td>
+                </tr>
+                <tr class="tList">
+                    <td class="pRank top">3</td>
+                    <td class="pName">니퍼트 (두산)</td>
+                    <td>22</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2.95</td>
+                    <td>142</td>
+                    <td>0</td>
+                    <td>999 9/9</td>
+                    <td>61</td>
+                    <td>151</td>
+                    <td>15</td>
+                    <td>57</td>
+                    <td>9</td>
+                    <td>0.880</td>
+                    <td class="pPoint">320,780</td>
+                </tr>
+                <tr class="tList">
+                    <td class="pRank">4</td>
+                    <td class="pName">니퍼트 (두산)</td>
+                    <td>22</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2.95</td>
+                    <td>142</td>
+                    <td>0</td>
+                    <td>999 9/9</td>
+                    <td>61</td>
+                    <td>151</td>
+                    <td>15</td>
+                    <td>57</td>
+                    <td>9</td>
+                    <td>0.880</td>
+                    <td class="pPoint">320,780</td>
+                </tr>
+                <tr class="tList">
+                    <td class="pRank">5</td>
+                    <td class="pName">니퍼트 (두산)</td>
+                    <td>22</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>2.95</td>
+                    <td>142</td>
+                    <td>0</td>
+                    <td>999 9/9</td>
+                    <td>61</td>
+                    <td>151</td>
+                    <td>15</td>
+                    <td>57</td>
+                    <td>9</td>
+                    <td>0.880</td>
+                    <td class="pPoint">320,780</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--contents05-->
+    <section class="contents">
+        <!--cartoon-->
+        <div class="con320 cartoon">
+            <p class="title">
+                최훈 카툰
+                <a href="javascript:void(0);"><i class="fa fa-plus-circle"></i></a>
+            </p>
+            <ul>
+                <li>
+                    <dl class="cartoonList">
+                        <dt><a href="javascript:void(0);"><img src="../images/temp/temp_cartoon.png" alt=""/> </a></dt>
+                        <dd class="cartoonTitle">정규시즌</dd>
+                        <dd class="date">2017.04.01 </dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="cartoonList">
+                        <dt><a href="javascript:void(0);"><img src="../images/temp/temp_cartoon.png" alt=""/> </a></dt>
+                        <dd class="cartoonTitle">정규시즌즌여기까..</dd>
+                        <dd class="date">2017.04.01 <span class="newIcon">NEW</span></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        <!--media-->
+        <div class="con320 media">
+            <p class="title">
+                야구 미디어
+                <a href="javascript:void(0);"><i class="fa fa-plus-circle"></i></a>
+            </p>
+            <div class="mediaSlide">
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="../images/temp/temp_media.png" alt="" />
+                        <strong>
+                            최대어디까지나오는지확인여기까..
+                        </strong>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="../images/temp/temp_media.png" alt="" />
+                        <strong>
+                            미디엉
+                        </strong>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="../images/temp/temp_media.png" alt="" />
+                        <strong>
+                            GRAND THEFT AUTO 5
+                        </strong>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="../images/temp/temp_media.png" alt="" />
+                        <strong>
+                            아무말대잔치
+                        </strong>
+                    </a>
+                </div>
+                <div>
+                    <a href="javascript:void(0);">
+                        <img src="../images/temp/temp_media.png" alt="" />
+                        <strong>
+                            너무 졸려
+                        </strong>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--etc-->
+        <div class="con320 etc">
+            <ul class="etcWrap">
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-question-circle"></i><br>
+                        게임가이드
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-desktop"></i><br>
+                        고객센터
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-shopping-cart"></i><br>
+                        코인구매
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-coffee"></i><br>
+                        공식카페
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer id="footerWrap">
+        <div class="footerBox">
+            <span class="gtrixLogo">(주) 지트릭스</span>
+            <ul class="footerInfo">
+                <li><a href="javascript:void(0);">회사소개</a></li>
+                <li><a href="javascript:void(0);">이용약관</a></li>
+                <li><a class="privacy" href="javascript:void(0);">개인정보취급방침</a></li>
+                <li><a href="javascript:void(0);">게임개별해지</a></li>
+            </ul>
+            <p class="gtrixInfo">
+                (주) 지트릭스 &nbsp;|&nbsp; 대표이사 : 김도식 &nbsp;|&nbsp; 주소 : 서울특별시 송파구 잠실동 175 애플타워 16층 &nbsp;|&nbsp; TEL : 02-6287-2148 &nbsp;|&nbsp; FAX : 02-552-1931 &nbsp;|&nbsp; 사업자등록번호 : 706-87-00206<br>
+                © Gtrix Corp. All Rights Reserved.
+            </p>
+            <p class="naverInfo">
+                <span class="naverLogo">네이버</span>
+                대표이사 : 김상헌 &nbsp;|&nbsp; 주소 : 경기도 성남시 분당구 불정로 6 NAVER 그린팩토리 16층 &nbsp;|&nbsp; 고객센터 : 1588-3820 &nbsp;|&nbsp; 팩스 : 031-784-1000 &nbsp;|&nbsp; 사업자등록번호 : 220-81-62517<br>
+                통신판매업신고번호 : 제2006-경기성남-0629호 &nbsp;|&nbsp; © Naver Corp. All Rights Reserved.
+            </p>
+            <p class="kboInfo">
+                <span class="kbo">KBO</span>
+                <span class="kpbpa">KPBPA</span>
+                <span class="sports2i">sports2i</span><br>
+                선수의 능력치를 구성하는 기반 데이터는 KBO공식 기록통계업체인 스포츠투아이(주)에서 제공합니다.
+                <span class="levelInfo">
+                    게임이용등급-전체이용가
+                </span>
+            </p>
+        </div>
+    </footer>
+
+    <!--fixed-->
+    <div class="fixedWrap">
+        <ul>
+            <li><a href="javascript:void(0);"><img src="../images/common/quick_guide.jpg" alt="게임가이드"/></a></li>
+            <li><a href="#"><i class="fa fa-arrow-circle-up"></i></a></li>
+        </ul>
+    </div>
+
+    <!--pop_lineUp-->
+    <section class="popWrap">
+        <!--라인업-->
+        <div class="lineupPop">
+            <p class="playerName">
+                선발 출전 선수
+                <a class="close" href="javascript:void(0);"><i class="fa fa-close"></i></a>
+            </p>
+            <div class="pTableWrap">
+                <label class="club">
+                    <img src="../images/temp/logo_5.png" alt="">
+                    <em class="clubName">두산베어스</em><br>
+                    <span class="pitcherName">니퍼트</span>
+                </label>
+                <table class="playerTable">
+                    <colgroup>
+                        <col width="55px">
+                        <col width="76px">
+                        <col width="65px">
+                    </colgroup>
+                    <tr>
+                        <th>타순</th><th>이름</th><th>포지션</th>
+                    </tr>
+                    <tr>
+                        <td>1</td><td class="pName">박건우</td><td>중견수</td>
+                    </tr>
+                    <tr>
+                        <td>2</td><td class="pName">오재원</td><td>2루수</td>
+                    </tr>
+                    <tr>
+                        <td>3</td><td class="pName">민병헌</td><td>우익수</td>
+                    </tr>
+                    <tr>
+                        <td>4</td><td class="pName">김재환</td><td>좌익수</td>
+                    </tr>
+                    <tr>
+                        <td>5</td><td class="pName">에반스</td><td>지명타자</td>
+                    </tr>
+                    <tr>
+                        <td>6</td><td class="pName">오재일</td><td>1루수</td>
+                    </tr>
+                    <tr>
+                        <td>7</td><td class="pName">양의지</td><td>포수</td>
+                    </tr>
+                    <tr>
+                        <td>8</td><td class="pName">허경민</td><td>3루수</td>
+                    </tr>
+                    <tr>
+                        <td>9</td><td class="pName">김재호</td><td>유격수</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pTableWrap">
+                <label class="club">
+                    <img src="../images/temp/logo_1.png" alt="">
+                    <em class="clubName">두산베어스</em><br>
+                    <span class="pitcherName">니퍼트</span>
+                </label>
+                <table class="playerTable">
+                    <colgroup>
+                        <col width="55px">
+                        <col width="76px">
+                        <col width="65px">
+                    </colgroup>
+                    <tr>
+                        <th>타순</th><th>이름</th><th>포지션</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="none">
+                            <i class="fa fa-file-o"></i><br>
+                            출전 선수 명단이<br>
+                            없습니다.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--게임 개별 해지-->
+        <div class="cancelPop hide">
+            <h1 class="cha">게임 해지 신청 알림</h1>
+            <h2>게임 해지 신청</h2>
+            <ol>
+                <li>
+                    <strong>STEP 1</strong><br><br>
+                    <span class="red">게임 해지 신청</span> 버튼을<br>클릭합니다.
+                    <span class="icon"><i class="fa fa-chevron-circle-right fa-2x"></i></span>
+                </li>
+                <li>
+                    <strong>STEP 2</strong><br><br>
+                    <span class="red">본인 확인</span>을 위해<br>휴대폰 인증을 합니다.
+                    <span class="icon"><i class="fa fa-chevron-circle-right fa-2x"></i></span>
+                </li>
+                <li>
+                    <strong>STEP 3</strong><br><br>
+                    본인 확인을 완료하면<br><span class="red">해지 신청이 접수</span>됩니다.
+                </li>
+            </ol>
+            <p class="btnWrap">
+                <button class="btn_x_100b">게임 해지 신청</button>
+                <button class="btn_x_100">취소</button>
+            </p>
+            <p class="caution">
+                - 게임 해지는 네이버게임 전체 탈퇴가 아닌 개별 게임 해지를 의미합니다.<br>
+                - 게임해지가 완료되어도 네이버게임 로그인이 가능하고 다른 게임도 정상적으로 이용할 수 있습니다.<br><br>
+                - 해지 신청을 하시면 그 <span class="red">즉시 게임을 이용하실 수 없습니다.</span><br>
+                - <span class="red">개인정보 및 캐릭터, 전적, 아이템, 유료아이템 등 게임에 관련된 내용은 15일간 유예기간을 거쳐 모두 삭제됩니다.</span><br>
+                - 해지 신청한 아이디는 15일간의 유예기간 이후 해지완료 되어 재가입이 가능합니다.<br>
+                - <span class="red">삭제가 완료된 후에는 복구가 불가능</span>하니 해지 신청 시 신중히 결정해 주시기 바랍니다.<br>
+            </p>
+        </div>
+        <!--해지 철회 팝업-->
+        <div class="noneCancelPop">
+            <i class="fa fa-close fa-3x"></i>
+            <h1>고객님은 게임 해지 신청상태입니다.</h1>
+            <h2>판타지 스타디움에 돌아오신 것을 환영합니다.</h2>
+            <p>다시 게임을 즐기시려면 게임 해지 철회 버튼을 클릭해주세요</p>
+            <div class="info">
+                <img src="../images/character/mascot_1.png" alt="선호구단로고"/>
+                <p class="cashInfo">
+                    <span class="name">구단명 : <strong>일이삼사오륙칠팔구십</strong></span><br><br>
+                    <span class="icon_cash">캐쉬</span>&nbsp;&nbsp;<span>게임캐쉬</span>&nbsp;
+                    <strong class="cashRecent">99999</strong><br>
+                    <span class="icon_coin">코인</span>&nbsp;&nbsp;<span>보유코인</span>&nbsp;
+                    <strong class="cashRecent">999999</strong>
+                </p>
+                <button class="btn_x_120b">게임 해지 철회</button>
+            </div>
+            <p class="caution">
+                <strong>2017.04.07 00:00</strong> 기준으로 모든 데이터는 삭제되며, 삭제 완료된 후에는 복구가 불가능합니다.<br>
+                삭제 완료된 후에 신규가입은 가능합니다.
+            </p>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

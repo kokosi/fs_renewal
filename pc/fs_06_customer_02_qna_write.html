@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta name="description" content="지트릭스 판타지 스타디움 홈페이지" />
+    <meta name="author" content="Gtirx" />
+    <meta name="keywords" content="Gtrix, 지트릭스, FantasyStadium, 판타지스타디움, Baseball Game" />
+    <meta name="viewport" content="width=1000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>판타지 스타디움</title>
+    <script type="text/javascript" src="../js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="../js/plugin/slick.min.js"></script>
+    <script type="text/javascript" src="../js/fs_js.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/fantasyMain.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <style>
+        /*basic
+        @font-face {
+            font-family: '나눔바른고딕', 'NanumBarunGothic', '나눔바른고딕OTF', 'NanumBarunGothicOTF';
+            src: url('../fonts/NanumBarunGothic.eot'); src: local(※), url('../fonts/NanumBarunGothic.woff') format("woff"), url('../fonts/NanumBarunGothic.ttf') format("truetype");
+        }*/
+    </style>
+</head>
+<body>
+<!--naver iframe-->
+<iframe title="SNB" id="snb_box" name="snb_new" src="http://news.naver.com/sports/2007/views/framed_top_new.php?parent_target=1&amp;from=fg&amp;template_size=1000" width="1000" height="108" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true"></iframe>
+
+<div id="fsWrap">
+    <!--header-->
+    <header id="headerWrap">
+        <h1><a href="javascript:void(0);">판타지스타디움</a></h1>
+        <nav class="gnbWrap">
+            <h2 class="hidden">GNB</h2>
+            <ul class="navList">
+                <li class="list"><a class="menu" href="javascript:void(0);">판스소식</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">공지사항</a></li>
+                        <li><a href="javascript:void(0);">이벤트</a></li>
+                    </ul>
+                </li>
+                <li class="list"><a class="menu" href="javascript:void(0);">가이드</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">초보자가이드</a></li>
+                        <li><a href="javascript:void(0);">게임가이드</a></li>
+                    </ul>
+                </li>
+                <li class="list"><a class="menu" href="javascript:void(0);">판스 정보센터</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">판스 랭킹</a></li>
+                        <li><a href="javascript:void(0);">선수 포인트 랭킹</a></li>
+                        <li><a href="javascript:void(0);">선수 카드</a></li>
+                        <li><a href="javascript:void(0);">KBO 일정 및 결과</a></li>
+                    </ul>
+                </li>
+                <li class="list"><a class="menu" href="javascript:void(0);">커뮤니티</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">자유게시판</a></li>
+                        <li><a href="javascript:void(0);">라인업분석</a></li>
+                        <li><a href="javascript:void(0);">공략게시판</a></li>
+                        <li><a href="javascript:void(0);">GM노트</a></li>
+                    </ul>
+                </li>
+                <li class="list"><a class="menu" href="javascript:void(0);">상점</a></li>
+                <li class="list"><a class="menu" href="javascript:void(0);">고객센터</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">FAQ</a></li>
+                        <li><a href="javascript:void(0);">1:1문의</a></li>
+                        <li><a href="javascript:void(0);">약관</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="frBattle" href="javascript:void(0);"> <i class="fa fa-external-link-square"></i> 구단대전</a>
+        </nav>
+    </header>
+
+    <div class="clear"></div>
+
+    <!--banner & common-->
+    <section id="visualWrap">
+        <!--banner-->
+        <div class="slideWrap">
+            <div>
+                <a href="javascript:void(0);"><img src="../images/temp/temp_banner_01.jpg" alt="배너영역"></a>
+            </div>
+            <div>
+                <a href="javascript:void(0);"><img src="../images/temp/temp_banner_02.png" alt="배너영역"></a>
+            </div>
+            <div>
+                <a href="javascript:void(0);"><img src="../images/temp/temp_banner_01.jpg" alt="배너영역"></a>
+            </div>
+            <div>
+                <a href="javascript:void(0);"><img src="../images/temp/temp_banner_02.png" alt="배너영역"></a>
+            </div>
+        </div>
+
+        <!--start & login-->
+        <div class="personalWrap">
+            <a class="gameStart" href="javascript:void(0);"><img src="../images/common/gameStart.jpg" alt="게임시작"></a>
+            <div class="login">
+                <!--naver login-->
+                <a class="naverLogin hide" href="javascript:void(0);"><img src="../images/common/btn_naverLogin.png" alt="네이버로그인"/></a>
+                <!--my info-->
+                <div class="info">
+                    <p class="myInfo">
+                        <img src="../images/character/mascot_s_1.png" alt="선호구단로고"/>
+                        <strong>일이삼사오륙칠팔구십</strong>
+                        <a class="btn_x_49" href="javascript:void(0);">내정보</a>
+                    </p>
+                    <p class="cashInfo">
+                        <span class="icon_cash">캐쉬</span>&nbsp;&nbsp;<span>게임캐쉬</span>&nbsp;
+                        <strong class="cashRecent">99999</strong>
+                        <a class="btn_x_49" href="javascript:void(0);">충전</a>
+                    </p>
+                    <p class="cashInfo">
+                        <span class="icon_coin">코인</span>&nbsp;&nbsp;<span>보유코인</span>&nbsp;
+                        <strong class="cashRecent">999999</strong>
+                        <a class="btn_x_49" href="javascript:void(0);">충전</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="subWrap">
+
+        <ul class="subTopTab">
+            <li><a class="active" href="javascript:void(0);">FAQ</a></li>
+            <li>&nbsp;|&nbsp;</li>
+            <li><a href="javascript:void(0);">1:1문의</a></li>
+            <li>&nbsp;|&nbsp;</li>
+            <li><a href="javascript:void(0);">약관</a></li>
+        </ul>
+
+        <h2>1:1문의</h2>
+
+        <div class="qnaWrap">
+
+            <ul class="subTab">
+                <li class="active"><a href="javascript:void(0);">1:1문의 작성</a></li>
+                <li><a href="javascript:void(0);">내 문의 내역</a></li>
+            </ul>
+            <div class="clear"></div>
+
+            <div class="naverCustomer">
+                <strong><span>네이버 계정 및 캐쉬충전</span> 관련 문의는 <span>개인정보 문의하기 버튼</span>을 클릭해주세요.</strong><br>
+                <em>네이버 게임 고객센터 (1588-3820)</em>
+                <button class="btn_x_120b naverMy">개인정보<br>문의하기</button>
+            </div>
+
+            <p class="info_box">카테고리를 정확하게 선택해주세요.</p>
+
+            <div class="qnaWrite">
+                <form onsubmit="" method="">
+                    <fieldset>
+                        <table>
+                            <colgroup>
+                                <col width="120px">
+                                <col width="800px">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>네이버 아이디</th>
+                                <td>fantasy***</td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>fantasy***@naver.com</td>
+                            </tr>
+                            <tr>
+                                <th>카테고리</th>
+                                <td>
+                                    <select class="sel_category">
+                                        <option>카테고리 선택1</option>
+                                        <option>카테고리 선택</option>
+                                    </select>
+                                    <select class="sel_category">
+                                        <option>카테고리 선택2</option>
+                                        <option>카테고리 선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <!--이벤트 > 당첨확인 카테고리 선택 시 나타남-->
+                            <tr>
+                                <th>제3자 개인정보<br>제공동의</th>
+                                <td><input type="checkbox"> 제3자 개인정보 제공에 동의합니다.</td>
+                            </tr>
+                            <tr>
+                                <th>제목</th>
+                                <td><input class="qnaSubject" type="text" maxlength="50" placeholder="제목은 최대 50자까지 입력 가능합니다."></td>
+                            </tr>
+                            <tr>
+                                <th>내용</th>
+                                <td class="te"><textarea class="qnaText" placeholder="내용은 최대 2000자까지 입력 가능합니다." maxlength="2000"></textarea></td>
+                            </tr>
+                            <tr>
+                                <th>첨부파일</th>
+                                <td class="fi">
+                                    <input type="file"><br>
+                                    <input type="file"><br>
+                                    <input type="file">
+                                    <p>
+                                        파일첨부는 파일 한 개 당 3MB를 넘을 수 없으며, 최대 3개까지만 가능합니다.<br>
+                                        (이미지[jpg, gif, bmp]파일과 zip 형식만 첨부가 가능합니다.)
+                                    </p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </form>
+                <div class="qnaBtn">
+                    <button class="btn_x_100b confirm">등록</button>
+                    <button class="btn_x_100 cancel">취소</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer id="footerWrap">
+        <div class="footerBox">
+            <span class="gtrixLogo">(주) 지트릭스</span>
+            <ul class="footerInfo">
+                <li><a href="javascript:void(0);">회사소개</a></li>
+                <li><a href="javascript:void(0);">이용약관</a></li>
+                <li><a class="privacy" href="javascript:void(0);">개인정보취급방침</a></li>
+                <li><a href="javascript:void(0);">게임이용등급</a></li>
+                <li><a href="javascript:void(0);">게임개별해지</a></li>
+            </ul>
+            <p class="gtrixInfo">
+                (주) 지트릭스 &nbsp;|&nbsp; 대표이사 : 김도식 &nbsp;|&nbsp; 주소 : 서울특별시 송파구 잠실동 175 애플타워 16층 &nbsp;|&nbsp; TEL : 02-6287-2148 &nbsp;|&nbsp; FAX : 02-552-1931 &nbsp;|&nbsp; 사업자등록번호 : 706-87-00206<br>
+                © Gtrix Corp. All Rights Reserved.
+            </p>
+            <p class="naverInfo">
+                <span class="naverLogo">네이버</span>
+                대표이사 : 김상헌 &nbsp;|&nbsp; 주소 : 경기도 성남시 분당구 불정로 6 NAVER 그린팩토리 16층 &nbsp;|&nbsp; 고객센터 : 1588-3820 &nbsp;|&nbsp; 팩스 : 031-784-1000 &nbsp;|&nbsp; 사업자등록번호 : 220-81-62517<br>
+                통신판매업신고번호 : 제2006-경기성남-0629호 &nbsp;|&nbsp; © Naver Corp. All Rights Reserved.
+            </p>
+            <p class="kboInfo">
+                <span class="kbo">KBO</span>
+                <span class="kpbpa">KPBPA</span>
+                <span class="sports2i">sports2i</span><br>
+                선수의 능력치를 구성하는 기반 데이터는 KBO공식 기록통계업체인 스포츠투아이(주)에서 제공합니다.
+                <span class="levelInfo">
+                    게임이용등급-전체이용가
+                </span>
+            </p>
+        </div>
+    </footer>
+
+</div>
+
+
+</body>
+</html>
