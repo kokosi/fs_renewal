@@ -16,4 +16,5 @@
 
 - html5를 기반으로 less를 사용하여 작업하였습니다.
 - css로 처리할 수 있는 부분들은 최대한 css를 사용하여 작업하였습니다.<br>
-+) 사용된 플러그인 : [slick](http://kenwheeler.github.io/slick/)
++) 사용된 플러그인 : [slick](http://kenwheeler.github.io/slick/)<br>
+- 크로스 브라우징 처리 : IE9+, Chrome, Safari, Firefox, Opera 
